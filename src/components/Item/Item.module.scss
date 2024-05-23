@@ -51,7 +51,7 @@
     font-size: 20px;
     height: 70px;
     justify-content: center;
-    width: 170px;
+    width: 120px;
   }
   &-acoes {
     align-items: center;
@@ -76,6 +76,7 @@
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
+  
   .quantidade {
     align-items: center;
     display: flex;
@@ -87,7 +88,7 @@
   }
   .item-acoes {
     gap: 50px;
-    justify-content: flex-end;
-    padding: 0 50px;
+    justify-content: flex-start;
+    padding: 5px;
   }
 }

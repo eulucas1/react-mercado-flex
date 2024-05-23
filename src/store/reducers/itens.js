@@ -175,12 +175,6 @@ const itensSlice = createSlice({
   name: 'itens',
   initialState,
   reducers: {
-    mudarFavorito: (state, { payload }) => {
-      state.map(item => {
-        if(item.id === payload) item.favorito = !item.favorito;
-        return item;
-      })
-    },
     cadastrarItem: (state, { payload }) => {
       state.push({ ...payload, id: uuid() });
     },

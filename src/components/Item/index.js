@@ -101,14 +101,9 @@ function Item(props) {
             R$ {preco.toFixed(2)}
           </div>
           <div className={styles['item-acoes']}>
-            {favorito
-              ? <AiFillHeart {...iconeProps} color='#ff0000' className={styles['item-acao']} onClick={resolverFavorito} />
-              : <AiOutlineHeart {...iconeProps} className={styles['item-acao']} onClick={resolverFavorito} />
-            }
             {carrinho
               ? (
                 <div className={styles.quantidade}>
-                  Quantidade:
                   <AiFillMinusCircle
                     {...quantidadeProps}
                     onClick={() => {
